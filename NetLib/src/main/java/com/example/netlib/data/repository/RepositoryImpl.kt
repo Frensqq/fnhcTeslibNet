@@ -169,7 +169,7 @@ class RepositoryImpl(
     }
 
     override suspend fun postUserAuth(data: AuthWithPasswordRequest): NetworkResult<UserAuthResponse> = saveApiCall {
-        api.postUserAuth(data).
+        api.postUserAuth(data)
     }
 
     override suspend fun patchUser(
