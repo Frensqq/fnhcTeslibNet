@@ -34,7 +34,7 @@ object PBApiService {
 
             defaultRequest { url(BASE_URL)
             token?.let{
-                headgier("Authorization", it)
+                header("Authorization", it)
             }}
         })
     }
