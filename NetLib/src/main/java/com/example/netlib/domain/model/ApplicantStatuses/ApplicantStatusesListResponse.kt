@@ -4,9 +4,9 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ApplicantStatusesListResponse(
-    val page: String,
-    val perPage: String,
-    val totalItems: String,
-    val totalPages: String,
+    val page: Int,
+    val perPage: Int,
+    val totalItems: Int,
+    val totalPages: Int,
     val items: List<ApplicantStatusesRecord>,
 )
